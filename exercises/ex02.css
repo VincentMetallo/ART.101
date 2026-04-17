@@ -1,5 +1,35 @@
-p {color:rgb(255, 192, 203); font-size:80%;}
+p {color:rgb(63, 0, 10); font-size:80%;}
 
 li{text-align:center;}
 
-html{background-color: rgb(127, 255, 212);}
+html{background-color: rgb(11, 79, 57);}
+
+
+.galindo-regular {
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+p {font-family: "Galindo", sans-serif;cfont-weight: 400; font-style: normal;}
+
+h1{font-family: "Galindo", sans-serif;cfont-weight: 400; font-style: normal;}
+h2{font-family: "Galindo", sans-serif;cfont-weight: 400; font-style: normal;}
+h3{font-family: "Galindo", sans-serif;cfont-weight: 400; font-style: normal;}
+
+p{text-align:center;}
+h1{text-align:center;}
+h2{text-align:center;}
+
+
+.highlight_01 {background-color:rgb(255, 255, 255);}
+
+.highlight_02 {background-color:rgb(120, 41, 41);}
+
+li {color:rgb(198, 73, 94); font-size:120%;}
+
+
+
+
+<li class="class">color:red</li>
