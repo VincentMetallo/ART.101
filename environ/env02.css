@@ -1,0 +1,56 @@
+html {background-image:url("background2.jpg"); width:4000}
+
+p {color:rgb(198, 73, 94); font-size:170%;}
+
+h1 {color:rgb(255, 255, 255); font-size:300%;}
+h2{font-size: 300%;}
+h3 {color:rgb(113, 119, 104); font-size:120%;}
+
+.highlight_01 {background-color:rgb(255, 255, 255);}
+
+.highlight_02 {background-color:rgb(120, 41, 41);}
+
+p{text-align:center;}
+h1{text-align:center;}
+h3{text-align:center;}
+h4{text-align:right;}
+h5{text-align:bottom;}
+
+
+.neon-text {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #ff00de,
+    0 0 40px #ff00de,
+    0 0 80px #ff00de;
+
+p {font-family: "Galindo", sans-serif;cfont-weight: 400; font-style: normal;}
+h1{font-family: "Galindo", sans-serif;cfont-weight: 400; font-style: normal;}
+h2{font-family: "Galindo", sans-serif;cfont-weight: 400; font-style: normal;}
+h3{font-family: "Galindo", sans-serif;cfont-weight: 400; font-style: normal;}
+
+
+
+#main {
+    background: rgb(255, 199, 227);
+    padding: 20px;
+    border-left: 6px solid #1d1184;
+    flex: 2;
+}
+#main h2 {
+    font-style: italic;
+    margin-top: 0;
+}
+#main p {
+    font-size: 120%;
+    line-height: 1.5;
+}
+
+#top {
+    background: rgb(255, 199, 227);
+    padding: 20px;
+    border-left: 6px solid #1d1184;
+    flex: 2;
+}

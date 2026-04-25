@@ -19,3 +19,17 @@ p{text-align:center;}
 h1{text-align:center;}
 h2{text-align:center;}
 h3{text-align:center;}
+
+
+.button {
+  background-color: rgb(198, 73, 94);
+  color: white;
+  border: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Optional: change color when hovering */
+.button:hover {
+  background-color: #ff00bb;
+}
