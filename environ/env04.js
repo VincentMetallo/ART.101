@@ -21,18 +21,26 @@ let buttonCreature = {
 $("#logford-button").click(function(){
 
     count = count + 1;
-    console.log("the button is click");
+console.log("the button is click");
     let arrayPosition = count - 1;
 
     let currentMood = buttonCreature.moods[arrayPosition];
 
 
 
+//buttonCreature.moods = buttonCreature.moods + currentMood ;
+$("#logford-button").html(currentMood) ;
+
+});
+
+//lab4
 
 $("#Time").click(function(){
     
-    console.log("the button is click");
-}
+console.log("the time button is click");
+
+document.body.style.backgroundImage = 'url("night.jpg")';
+});
     
     //(count === 2) {
    //     count = 0;
@@ -45,15 +53,3 @@ $("#Time").click(function(){
 
 
 
-
-
-
-
-
-
-
-
-//buttonCreature.moods = buttonCreature.moods + currentMood ;
-$("#logford-button").html(currentMood) ;
-
-});
