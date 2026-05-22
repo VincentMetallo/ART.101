@@ -1,0 +1,76 @@
+// add creature to the garden
+$("#crAdd").click( function(){
+
+    // grab the value from the text input and assign it to a variable crName
+    let crName=$("#crName").val();
+    let crColor=$("#crColor").val();
+    let crEyesNum=$("#crEyesNum").val();
+
+    // test in console
+    console.log(crName);  
+    console.log(crColor); 
+    console.log(crEyesNum); 
+    
+    if( crName.length > 2) { 
+        $("#creature-list").append("<div>"+crName+crColor+crEyesNum+"</div>");
+    }
+
+
+             $("#creature-list").append(`
+            <div class="creature">
+                <div class="creature-body" style="background-color: ${crColor}"> ${crEyesHtml} </div>
+                <div class="creature-info">${crName}</div>
+            </div>
+        `);
+    `);
+    }
+
+    // lets construct html for eyes
+    let crEyesHtml="";
+    for (let i = 0; i < crEyesNum; i++) {
+        crEyesHtml=crEyesHtml+ "<div class='eye'>.</div>";
+    }
+
+    
+
+     $("#crName").val(""); // write the value
+    // $("#crName").val(); // retrieve the value
+
+}); 
+
+
+// next lecture 
+
+// store all creatures in an array
+
+let allCreatures=[];
+
+
+// functions
+// function to grab data from the form
+function getCreatureFromForm(){
+  
+  const freshCreature={
+        name: $("#crName").val(),
+        color: $("#crColor").val(),
+        eyesNum: $("#crEyesNum").val()
+    };
+
+return freshCreature;
+
+};
+
+
+$("#crAdd").click( function(){
+
+    // create creature object from the form inputs
+    const newCreature = getCreatureFromForm();
+    console.log(newCreature);
+
+    // safety checks
+    // add creature to the page
+    // save to the memory 
+    // reset the fporm prepare for the next iteration
+
+
+});
