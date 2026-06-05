@@ -10,8 +10,12 @@ function askNumber(whatNumber) {
 }
 
 $("#good-button").click(function ranNum() {
+
+    // Random number generator
     var GeneratedNumber = Math.floor(Math.random() * 20) + 1;
     var conclusion
+    //
+    
     if (GeneratedNumber <= 10) {
   console.log(GeneratedNumber)
 }

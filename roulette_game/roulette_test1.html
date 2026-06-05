@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cash System and RNG</title>
+</head>
+<body>
+
+    <h2>Virtual Cash: $<span id="cash-display">0</span></h2>
+    <p>Last Earnings: $<span id="rng-display">0</span></p>
+
+    <button onclick="earnMoney()">Earn Random Cash</button>
+    <button onclick="resetCash()">Reset</button>
+
+    <script>
+        // 1. Initialize the cash system variable
+        let totalCash = 0;
+
+        // 2. Create the Random Number Generator function
+        function getRandomAmount(min, max) {
+            // Formula: Math.floor(Math.random() * (max - min + 1)) + min
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // 3. Logic to update the system
+        function earnMoney() {
+            const earned = //CASH EARNED HERE
+            // Add to total cash
+            totalCash += earned;
+
+            // Update the HTML display
+            document.getElementById('cash-display').textContent = totalCash;
+            document.getElementById('rng-display').textContent = earned;
+        }
+    </script>
+
+</body>
+</html>

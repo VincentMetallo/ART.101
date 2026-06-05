@@ -1,0 +1,34 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* Size modifiers */
+.btn-red-small { height: 50px; width: 50px; background-color: rgb(255, 0, 0); border-color: #ff935d;}
+.btn-black-small { height: 50px; width: 50px; background-color: rgb(69, 69, 69);border-color: #767b5d;}
+.btn-red-medium { height: 50px; width: 110px; background-color: rgb(255, 0, 0);border-color: #ff935d;}
+.btn-black-medium { height: 50px; width: 110px; background-color: rgb(69, 69, 69);border-color: #767b5d;}
+
+
+/* --------------------------- */
+#fullScreenOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: black; /* Optional: adds a black background if the image doesn't fill the whole screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fullScreenOverlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire screen without distortion */
+}

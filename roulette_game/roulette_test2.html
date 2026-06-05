@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money Doubler Game</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        .game-container { border: 1px solid #ccc; display: inline-block; padding: 20px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+<div class="game-container">
+    <h2>Money Doubler</h2>
+    <p>Current Balance: $<span id="balance">100</span></p>
+    
+    <label for="betAmount">Bet Amount:</label>
+    <input type="number" id="betAmount" min="1" value="10">
+    <button onclick="playGame()">Gamble!</button>
+
+    <p id="result-message"></p>
+</div>
+
+<script>
+    let balance = 100; // Starting money
+
+    function playGame() {
+        const betInput = document.getElementById('betAmount');
+        const bet = parseInt(betInput.value);
+        const resultDisplay = document.getElementById('result-message');
+        const balanceDisplay = document.getElementById('balance');
+
+        // Check if the user has enough money
+        if (isNaN(bet) || bet <= 0 || bet > balance) {
+            alert("Invalid bet amount!");
+            return;
+        }
+        // Generate a random number from 1 to 10
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+        
+        // Define winning condition (e.g., hitting 7 wins)
+        const winningNumber = GeneratedNumber;
+
+
+
+
+        if (randomNumber === winningNumber) {
+            // WIN: Double the bet amount
+            balance += bet; 
+            resultDisplay.innerText = `You rolled a ${randomNumber}. YOU WIN! You won $${bet * 2}.`;
+            resultDisplay.style.color = "green";
+        } else {
+            // LOSS: Lose the bet amount
+            balance -= bet;
+            resultDisplay.innerText = `You rolled a ${randomNumber}. YOU LOST $${bet}.`;
+            resultDisplay.style.color = "red";
+        }
+
+        // Update display
+        balanceDisplay.innerText = balance;
+        
+
+
+        //--------LOSE----------//
+        if (balance <= 0) {
+            alert("Game Over! You are out of money.");
+            location.reload(); // Restart the game
+        }
+    }
+</script>
+
+</body>
+</html>
