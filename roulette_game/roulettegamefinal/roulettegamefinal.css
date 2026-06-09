@@ -1,0 +1,82 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* Size modifiers */
+.btn-red-small { height: 50px; width: 50px; background-color: rgb(255, 0, 0); border-color: #ff935d;}
+.btn-black-small { height: 50px; width: 50px; background-color: rgb(69, 69, 69);border-color: #767b5d;}
+.btn-red-medium { height: 50px; width: 110px; background-color: rgb(255, 0, 0);border-color: #ff935d;}
+.btn-black-medium { height: 50px; width: 110px; background-color: rgb(69, 69, 69);border-color: #767b5d;}
+
+
+/* --------------------------- */
+#fullScreenOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fullScreenOverlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+h1 {
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+
+.fontbutton {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger
+  
+  ;
+}
+
+.fontbuttonlose {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger
+  ;
+}
+
+.fontbuttonlose {
+  color: red;
+}
+
+#money-container {
+  position: absolute;
+  top: 480px; 
+  right: 140px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-size: larger
+}
