@@ -34,23 +34,6 @@ $("#logford-button").html(currentMood) ;
 });
 
 
-
-//lab4
-
-$("#Time").click(function(){
-    
-console.log("the time button is click");
-$("#Time").toggleClass("night");
-document.body.style.backgroundImage = 'url("night.jpg")';
-});
-    
-    //(count === 2) {
-   //     count = 0;
-   // }
-
-   // $("#Time").click(function(){
-  //  if (count === 1) {document.body.style.backgroundImage = "night.jpg";});}}
-
 // LAB 5
 
 $("#ghost-button").click(function(){
@@ -60,10 +43,21 @@ $("#ghost-button").click(function(){
 
 
 
-night = !night;
-
-if (night === true) {
+// night = !night;
+$("#Time").click(function(){
     
+console.log("the time button is click");
+$("#Time").toggleClass("night");
+document.body.style.backgroundImage = "url('night.jpg')";
+element.style.backgroundSize = "cover";
+element.style.backgroundPosition = "center";
+element.style.backgroundRepeat = "no-repeat";
+element.style.minHeight = "100vh";
+element.style.width = "100vw";
+});
+
+ if ("night" === true) {
+    console.log("the ghost button is click");
     $("#ghost-button").hover(function(){
         $("#ghost").stop(true, true).slideDown(300);
         console.log("the ghost button is click");
@@ -74,7 +68,4 @@ if (night === true) {
         console.log("the ghost button is click");
      $("#ghost").append("<img src='ghost.png'>");
     }
-    );
-
-
-}
+ }
